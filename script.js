@@ -2,7 +2,7 @@ const map = document.getElementById("map");
 const enterArchivesButton = document.getElementById("enterArchives");
 
 enterArchivesButton.addEventListener("click", () => {
-    map.style.transformOrigin = 'center 55%, left 80%';
+    map.style.transformOrigin = 'right 38%';
     map.classList.toggle("zoomed");
     map.classList.toggle("zoomed-temple");
     if (map.classList.contains("zoomed-return")) {
@@ -13,12 +13,15 @@ enterArchivesButton.addEventListener("click", () => {
 const returnHomeButton = document.getElementById("returnHome");
 returnHomeButton.addEventListener("click", () => {
     map.style.transformOrigin = '38% 38%';
-    map.classList.toggle("zoomed");
-    map.classList.toggle("zoomed-return");
-    if (map.classList.contains("zoomed-temple")) {
-        map.classList.remove("zoomed-temple");
-    }
-    setTimeout(() => {
-        window.location.href = 'index.html';
-    }, 600);
+    map.classList.add("zoomed", "zoomed-return");
+    map.classList.remove("zoomed-temple");
+
+    const onTransitionEnd = (event) => {
+        if (event.propertyName === 'transform') {
+            map.removeEventListener('transitionend', onTransitionEnd);
+            window.location.href = 'index.html';
+        }
+    };
+
+    map.addEventListener('transitionend', onTransitionEnd);
 });
