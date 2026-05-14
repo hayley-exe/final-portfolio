@@ -79,6 +79,26 @@ body {
   background: rgba(255, 255, 255, 0.15);
 }
 
+#goArchives {
+  position: absolute;
+  left: 13%;
+  bottom: 62%;
+  padding: 0.85rem 1.2rem;
+  border: 2px solid white;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#goArchives:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
 #returnHome {
   position: absolute;
   left: 38%;

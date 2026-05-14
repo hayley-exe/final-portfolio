@@ -11,6 +11,15 @@ if (enterArchivesButton) {
         if (map.classList.contains("zoomed-return")) {
             map.classList.remove("zoomed-return");
         }
+
+        const onTransitionEnd = (event) => {
+            if (event.propertyName === 'transform') {
+                map.removeEventListener('transitionend', onTransitionEnd);
+                window.location.href = 'library.html';
+            }
+        };
+
+        map.addEventListener('transitionend', onTransitionEnd);
     });
 }
 
