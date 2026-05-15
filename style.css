@@ -119,7 +119,7 @@ body {
   background: rgba(255, 255, 255, 0.15);
 }
 
-#returnHome {
+#returnHomea {
   position: absolute;
   left: 38%;
   top: 38%;
@@ -135,8 +135,126 @@ body {
   cursor: pointer;
   z-index: 2;
 }
+#returnHomea:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
 
-#returnHome:hover {
+#returnHomeb {
+  position: absolute;
+  left: 82%;
+  bottom: 10%;
+  transform: translate(-50%, -50%);
+  padding: 0.85rem 1.2rem;
+  border: 2px solid white;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#returnHomeb:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+#goDocks {
+  position: absolute;
+  right: 55%;
+  bottom: 10%;
+  padding: 0.85rem 1.2rem;
+  border: 2px solid white;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#goDocks:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+#goUnder {
+  position: absolute;
+  right: 66%;
+  bottom: 20%;
+  padding: 0.85rem 1.2rem;
+  border: 2px solid white;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#goUnder:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+#returnUp {
+  position: absolute;
+  left: 76%;
+  top: 10%;
+  padding: 0.85rem 1.2rem;
+  border: 2px solid white;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#returnUp:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+#goWaydown {
+  position: absolute;
+  left: 88%;
+  top: 40%;
+  padding: 0.85rem 1.2rem;
+  border: 2px solid white;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#goWaydown:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+#leaveTown {
+  position: absolute;
+  left: 57%;
+  top: 38%;
+  padding: 0.85rem 1.2rem;
+  border: 2px solid white;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#leaveTown:hover {
   background: rgba(255, 255, 255, 0.15);
 }
 
